@@ -1,0 +1,65 @@
+body, html {
+	height: 100%;
+}
+
+
+* {
+	margin: 0; /*Remove default margin in all html*/
+	padding: 0;	 
+	/*font-size: 0;*/
+}
+
+body {
+	background: #ada6a0;
+	/*position: relative;*/
+}
+
+
+.container {
+	width: 930px;
+	margin: 0 auto;
+}
+
+.header {
+	height: 136px;
+	text-align: center;
+	color: #545454;
+}
+
+.header h1 {
+	font-size: 88.5px;
+	/*line-height: 50%;*/
+}
+
+/*Menu section*/
+
+.menu * {
+	
+	outline: 1px solid red;
+}
+ 
+.menu {
+	height: 55px;
+	background: #fff;
+	font-size: 18px;
+	/*position: relative;*/
+}
+
+.menu li {
+	position: relative;
+	display: inline-block;
+	height: 55px;
+	width: 100px;
+	text-align: center;
+}
+.menu div a {
+	text-decoration: none;
+	margin: 18px 0 0 0;
+	position: absolute;
+	/*top: 50%;*/
+	margin: -9px 0 0 0;
+}
+
+.menu .search {
+	float: right;
+}
