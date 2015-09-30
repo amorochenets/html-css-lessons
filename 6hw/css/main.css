@@ -6,7 +6,7 @@ body, html {
 * {
 	margin: 0; /*Remove default margin in all html*/
 	padding: 0;	 
-	/*font-size: 0;*/
+	font-size: 0;
 }
 
 body {
@@ -34,32 +34,124 @@ body {
 /*Menu section*/
 
 .menu * {
-	
-	outline: 1px solid red;
+	font-size: 18px;
 }
  
 .menu {
 	height: 55px;
 	background: #fff;
-	font-size: 18px;
-	/*position: relative;*/
+	position: relative;
+	margin: 0 0 20px 0;
 }
 
 .menu li {
 	position: relative;
 	display: inline-block;
 	height: 55px;
-	width: 100px;
+	width: 110px;
 	text-align: center;
 }
-.menu div a {
+.menu a {
+	/*outline: 1px solid red;*/
 	text-decoration: none;
-	margin: 18px 0 0 0;
+	margin: 16px 0 0 0;
 	position: absolute;
 	/*top: 50%;*/
-	margin: -9px 0 0 0;
 }
 
 .menu .search {
+	/*float: right;*/
+	display: inline-block;
+	position: absolute;
+	right: 15px;
+	top: 18px;
+
+}
+
+/*Wallpapers section*/
+
+.wallpapers {
+	background: #fff;
+	margin: 0 0 15px 0;
+}
+
+.wallpapers img {
+	margin: 15px 11px 10px;
+}
+
+
+.slide-panel {
+	margin: 0 0 15px;
+	position: relative;
+}
+
+.slide-panel div {
+	display: inline-block;
+	width: 225px;
+	height: 377px;
+	background: #fff;
+	margin: 0 10px 0 0;
+	position: relative;
+}
+
+
+.slide-panel .last {
+	margin: 0;
+}
+
+.slide-panel img {
+	margin: 10px;
+	width: 205px;
+	height: 155px;
+}
+
+.slide-panel p {
+	font-size: 12px;
+	text-align: justify;
+	margin: 0 10px;
+}
+
+.slide-panel span {
+	margin: 0 0 0 35px;
+}
+
+/*Welcome panel section*/
+
+.welcome-panel {
+	background: #fff;
+	height: 187px;
+}
+
+.welcome-panel .small-images {
+	width: 230px;
+	height: 170px;
+	margin: 6px;
+	float: left;
+}
+
+.welcome-panel img {
+	width: 105px;
+	height: 80px;
+	margin: 4px;
+}
+
+.welcome-panel h2 {
+	font-size: 18px;
+	margin: 10px;
+}
+
+.welcome-panel p {
+	font-size: 12px;
+	text-align: justify;
+	margin: 10px;
+}
+
+.welcome-panel p span {
+	margin: 0 0 0 35px;
+}
+
+.welcome-panel a {
+	font-size: 12px;
+	margin: 33px 10px 8px;
 	float: right;
 }
