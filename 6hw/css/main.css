@@ -1,3 +1,19 @@
+@font-face {
+	font-family: 'Vani';
+	src: url('fonts/Vani.eot');
+	src: local('☺'), url('fonts/Vani.woff') format('woff'), url('fonts/Vani.ttf') format('truetype'), url('fonts/Vani.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'rockwell';
+	src: url('fonts/rockwell.eot');
+	src: local('☺'), url('fonts/rockwell.woff') format('woff'), url('fonts/rockwell.ttf') format('truetype'), url('fonts/rockwell.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 body, html {
 	height: 100%;
 }
@@ -11,7 +27,6 @@ body, html {
 
 body {
 	background: #ada6a0;
-	/*position: relative;*/
 }
 
 
@@ -28,13 +43,15 @@ body {
 
 .header h1 {
 	font-size: 88.5px;
-	/*line-height: 50%;*/
+	font-family: 'Vani';
+	font-weight: normal;
 }
 
 /*Menu section*/
 
 .menu * {
 	font-size: 18px;
+	font-family: 'rockwell';
 }
  
 .menu {
@@ -42,6 +59,7 @@ body {
 	background: #fff;
 	position: relative;
 	margin: 0 0 20px 0;
+	box-shadow: 0px 0px 3px #545454;
 }
 
 .menu li {
@@ -59,13 +77,33 @@ body {
 	/*top: 50%;*/
 }
 
+.menu a:visited {
+	color: #545454;
+}
+
 .menu .search {
 	/*float: right;*/
+	font-size: 4px;
 	display: inline-block;
 	position: absolute;
 	right: 15px;
-	top: 18px;
+	top: 16px;
 
+}
+
+.menu .search1 {
+	color: rgba(91,91,91,.5);
+	font-size: 18px;
+	font-style: italic;
+	padding: 1px 0 1px 10px;
+	border: 1px solid rgba(91,91,91,.2);
+	background: rgba(91,91,91,.05);
+}
+
+.menu .s_img {
+	position: absolute;
+	top: 18px;
+	right: 20px;
 }
 
 /*Wallpapers section*/
@@ -73,16 +111,19 @@ body {
 .wallpapers {
 	background: #fff;
 	margin: 0 0 15px 0;
+	box-shadow: 0px 0px 3px #545454;
 }
 
 .wallpapers img {
 	margin: 15px 11px 10px;
 }
 
+/*Slide-panel section*/
 
 .slide-panel {
 	margin: 0 0 15px;
 	position: relative;
+	color: #5b5b5b;
 }
 
 .slide-panel div {
@@ -92,6 +133,7 @@ body {
 	background: #fff;
 	margin: 0 10px 0 0;
 	position: relative;
+	box-shadow: 0px 0px 3px #545454;
 }
 
 
@@ -107,6 +149,7 @@ body {
 
 .slide-panel p {
 	font-size: 12px;
+	font-family: 'rockwell';
 	text-align: justify;
 	margin: 0 10px;
 }
@@ -121,6 +164,9 @@ body {
 	background: #fff;
 	height: 187px;
 	margin: 0 0 15px 0;
+	color: #5b5b5b;
+	position: relative;
+	box-shadow: 0px 0px 3px #545454;
 }
 
 .welcome-panel .small-images {
@@ -137,12 +183,17 @@ body {
 }
 
 .welcome-panel h2 {
+	display: inline-block;
 	font-size: 18px;
-	margin: 10px;
+	font-family: 'rockwell';
+	font-weight: normal;
+	margin: 10px 0 0 0;
+	color: #000;
 }
 
 .welcome-panel p {
 	font-size: 12px;
+	font-family: 'rockwell';
 	text-align: justify;
 	margin: 10px;
 }
@@ -153,8 +204,16 @@ body {
 
 .welcome-panel a {
 	font-size: 12px;
+	font-family: 'rockwell';
 	margin: 33px 10px 8px;
-	float: right;
+	/*float: right;*/
+	position: absolute;
+	right: 1px;
+	bottom: 1px;
+}
+
+.welcome-panel a:visited {
+	color: #545454;
 }
 
 /*Footer section*/
@@ -163,13 +222,18 @@ body {
 	background: #fff;
 	height: 55px;
 	margin: 0 0 115px 0;
+	color: #545454;
+	box-shadow: 0px 0px 3px #545454;
 }
 
 .footer a {
 	display: inline-block;
 	text-decoration: none;
 	font-size: 14px;
-	/*font-family: calibri;*/
+	font-family: calibri;
 	margin: 18px 0 0 17px;
 }
 
+.footer a:visited {
+	color: #545454;
+}
