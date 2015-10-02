@@ -120,6 +120,7 @@ body {
 .welcome-panel {
 	background: #fff;
 	height: 187px;
+	margin: 0 0 15px 0;
 }
 
 .welcome-panel .small-images {
@@ -155,3 +156,20 @@ body {
 	margin: 33px 10px 8px;
 	float: right;
 }
+
+/*Footer section*/
+
+.footer {
+	background: #fff;
+	height: 55px;
+	margin: 0 0 115px 0;
+}
+
+.footer a {
+	display: inline-block;
+	text-decoration: none;
+	font-size: 14px;
+	/*font-family: calibri;*/
+	margin: 18px 0 0 17px;
+}
+
