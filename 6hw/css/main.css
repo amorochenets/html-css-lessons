@@ -26,7 +26,7 @@ body, html {
 }
 
 body {
-	background: #ada6a0;
+	background: #ada6a0 radial-gradient(circle at top center, #fff 2%, #ada6a0 50%) no-repeat;
 }
 
 
@@ -34,6 +34,10 @@ body {
 	width: 930px;
 	margin: 0 auto;
 }
+
+/*.container * {*/
+/*	outline: 1px solid red;*/
+/*}*/
 
 .header {
 	height: 136px;
@@ -70,16 +74,15 @@ body {
 	text-align: center;
 }
 .menu a {
-	/*outline: 1px solid red;*/
+	display: inline-block;
 	text-decoration: none;
 	margin: 16px 0 0 0;
-	position: absolute;
-	/*top: 50%;*/
+	color: red;
 }
 
-.menu a:visited {
-	color: #545454;
-}
+/*.menu a:visited {*/
+/*	color: #545454;*/
+/*}*/
 
 .menu .search {
 	/*float: right;*/
@@ -91,7 +94,7 @@ body {
 
 }
 
-.menu .search1 {
+.menu input {
 	color: rgba(91,91,91,.5);
 	font-size: 18px;
 	font-style: italic;
@@ -124,6 +127,7 @@ body {
 	margin: 0 0 15px;
 	position: relative;
 	color: #5b5b5b;
+	
 }
 
 .slide-panel div {
@@ -167,6 +171,8 @@ body {
 	color: #5b5b5b;
 	position: relative;
 	box-shadow: 0px 0px 3px #545454;
+	min-height: 200px;
+	height: auto !important;
 }
 
 .welcome-panel .small-images {
