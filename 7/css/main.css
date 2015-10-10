@@ -1,0 +1,45 @@
+
+@font-face {
+    font-family: "STHeitiSC-Light";
+    src: url("fonts/STHeitiSC-Light.otf");
+}
+body {
+    background: rgba(0, 0, 0, 0) url("../images/fooseshoes.jpg") no-repeat scroll center top;
+    margin: 0;
+}
+.b-container {
+}
+.b-container__main {
+    margin: 0 auto;
+    /*outline: 1px solid red;*/
+    width: 942px;
+}
+
+.b-container__clearfix {
+    clear: both;
+}
+.b-container__header {
+}
+.b-header {
+}
+.b-header__logo {
+    margin: 4px 0 0;
+}
+.b-logo {
+    font-family: "verdana";
+    font-size: 26px;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+}
+.b-logo__link {
+    color: #57c5a0;
+    text-decoration: none;
+}
+.b-header__btn {
+}
+.b-header__auth {
+}
+.b-auth {
+}
+.b-auth__link {
+}
