@@ -1,0 +1,166 @@
+
+@import "https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Didact+Gothic";
+body {
+    font-family: "Didact Gothic",sans-serif;
+    font-size: 10pt;
+    margin: 0;
+}
+html {
+}
+img {
+    border: 0 none;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+header, nav, section, article, aside, footer {
+    display: block;
+    box-sizing: border-box;
+}
+.b-container {
+	max-width: 1578px;
+	margin: 0 auto;
+}
+.b-container__header {
+	text-align: center;
+}
+.b-header {
+	background: #170103;
+}
+.b-header__headline {
+	display: inline;
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 4em;
+	text-transform: capitalize;
+}
+.b-header__link {
+	text-decoration: none;
+	color: #fa5923;
+}
+.b-container__menu {
+	float: right;
+	width: 15%
+}
+.b-menu {
+	margin: 0;
+	padding: 0;
+}
+.b-menu__item {
+	list-style: none;
+	border-top: 2px solid #fff;
+	text-transform: uppercase;
+}
+
+.b-menu__item:first-child {
+	border: 0;
+}
+
+.b-menu__item_curent {
+	padding: 5px;
+	background: #fa5923;
+}
+.b-menu__link {
+	background: #73366f;
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	padding: 5px;
+}
+
+.b-menu__link:hover {
+	background: #edb637;
+	transition: all 300ms ease-out;
+}
+
+.b-container__content {
+	float: left;
+	width: 65%;
+}
+.b-content {
+	background: #fff0c9;
+	padding: 2%;
+	font-size: 1.23em;
+}
+.b-content__headlineBlock {
+	margin: 0 0 20px;
+}
+.b-content__headline {
+	margin: 0;
+	font-size: 2.2em;
+}
+.b-content__article {
+}
+.b-content__imgBlock {
+}
+.b-content__img {
+}
+.b-container__slidebar {
+	float: left;
+	width: 20%;
+}
+.b-slidebar {
+	background: #edb637;
+	font-size: 1.1em;
+	padding: 5%;
+}
+.b-slidebar__article {
+}
+.b-slidebar__imgBlock {
+	margin: 10px 0 0;
+}
+.b-slidebar__img {
+}
+.b-containet__clearfix {
+	clear: both;
+}
+.b-container__footer {
+	text-align: center;
+}
+.b-footer {
+	background: #170103;
+	color: #fff0c9;
+	padding: 1%;
+	font-size: 0.8em;
+}
+.b-footer__copyright {
+}
+
+
+@media screen and (max-width: 1000px) {
+	.b-container__menu {
+		width: 25%;
+	}
+	.b-container__content {
+		width: 75%;
+	}
+	.b-container__slidebar {
+		width: 25%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.b-container__menu {
+		width: 100%;
+		float: none;
+	}
+	.b-container__content {
+		width: 100%;
+		float: none;
+	}
+	.b-container__slidebar {
+		width: 100%;
+		float: none;
+	}
+
+
+	.b-menu {
+		display: table;
+		width: 100%
+	}
+	.b-menu__item {
+		display: table-cell;
+		border: 0;
+		border-left: 2px solid #fff;
+		text-align: center;
+	}
+}
