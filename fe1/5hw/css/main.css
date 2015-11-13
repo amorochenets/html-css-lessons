@@ -1,0 +1,277 @@
+
+@font-face {
+	font-family: 'Bebas';
+	src: url('fonts/Bebas.eot');
+	src: local('☺'), url('fonts/Bebas.woff') format('woff'), url('fonts/Bebas.ttf') format('truetype'), url('fonts/Bebas.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'HelveticaNeueMedium';
+	src: url('fonts/HelveticaNeueMedium.eot');
+	src: local('☺'), url('fonts/HelveticaNeueMedium.woff') format('woff'), url('fonts/HelveticaNeueMedium.ttf') format('truetype'), url('fonts/HelveticaNeueMedium.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Helvetica';
+	src: url('fonts/Helvetica.eot');
+	src: local('☺'), url('fonts/Helvetica.woff') format('woff'), url('fonts/Helvetica.ttf') format('truetype'), url('fonts/Helvetica.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body, html {
+	height: 100%
+}
+
+
+* {
+	margin: 0; /*Remove default margin in all html*/
+	padding: 0;	 
+	/*outline: 1px solid red;*/
+}
+
+.main {
+	width: 940px;
+	margin: 0 auto;
+}
+
+
+/*Header section*/
+
+.header a {
+	display: inline-block;
+	margin-top: 36px;
+	margin-left: 4px;
+}
+
+.line {
+	display: block;
+	height: 7px;
+	background: #ececec;
+	
+}
+
+.menu {
+	float: right;
+	width: 626px;
+	text-align: justify;
+}
+.menu li {
+	display: inline-block;
+	height: 133px;
+	list-style: none;
+	margin: 0 0 0 50px;
+	padding: 0;
+}
+
+.menu a {
+	display: inline-block;
+	font-family: "Bebas";
+	color: #474747;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.menu div {
+	color: #a5a5a5;
+	font-size: 12px;
+}
+
+.triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top: 9px solid #ececec;
+	margin: 0 auto;
+}
+
+
+/*Slider section*/
+
+.slider  div {
+	 position: relative; 
+}
+
+.headline {
+	display: inline-block;
+	height: 72px;
+	width: 200px;
+	background: rgba(71,71,71,.9);
+	top: -76px;
+	font-family: "Bebas";
+	font-size: 28px;
+	color: #fff;
+	padding: 0 0 0 17px;	
+}
+
+.headline .title {
+	padding-top: 10px;
+	color: #9a9a9a;
+	font-size: 14px;
+	line-height: 1;
+}
+
+.slider .triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 11px solid transparent;
+	border-right: 11px solid transparent;
+	border-bottom: 11px solid #f8f8f8;
+	margin: 0 auto;
+	position: relative;
+	top: -87px;
+	
+}
+.controls {
+	/*display: inline-block;*/
+	float: right;
+	margin-right: 15px;
+	top: -32px;
+}
+
+.controls div {
+	display: inline-block;
+	height: 5px;
+	width: 23px;
+	margin-left: 5px;
+	background: #fff;
+	z-index: 2;
+}
+
+.controls .active {
+	background: #444444;
+}
+
+.description {
+	background: #f8f8f8;
+	display: block;
+	font-family: "HelveticaNeueMedium";
+	font-size: 12px;
+	color: #474747;
+	padding: 20px 17px;
+	top: -87px;
+}
+
+.description h3 {
+	font-family: 'Bebas';
+	font-size: 16px;
+
+	
+}
+
+/*Info section*/
+
+.info div {
+	display: inline-block;
+	width: 310px;
+	font-family: "Helvetica";
+	font-size: 12px;
+	color: #414141;
+	line-height: 1.5;
+}
+
+.info p {
+	padding: 0 35px 20px 0;
+}
+
+.info h2 {
+	font-family: "Bebas";
+	font-size: 20px;
+	color: #464646;
+	display: inline-block;
+	width: 200px;
+	padding: 0 0 30px 30px;
+}
+
+.info a {
+	font-family: "Bebas";
+	font-size: 12px;
+	text-decoration: none;
+	color: #464646;
+	display: inline-block;
+	padding-bottom: 30px;
+}
+
+/*Works section*/
+
+.works .headline_work {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+	background: url(../images/design/strikes.gif) repeat-x;
+}
+
+.headline_work h2 {
+	display: inline-block;
+	font-family: "Bebas";
+	font-size: 18px;
+	color: #474747;
+	padding: 14px 28px;
+	background: #fff;
+	position: relative;
+	top: -14px;
+}
+
+.works .work-col {
+	display: inline-block;
+	width: 217px;
+}
+
+.m {
+	margin-right: 20px;
+}
+
+.work-col p {
+	font-family: "Helvetica";
+	font-size: 12px;
+	color: #414141;
+	line-height: 1.5;
+}
+
+.work-col h2 {
+	padding: 10px 0;
+	font-family: "Bebas";
+	font-size: 18px;
+	color: #474747;
+}
+
+.work-col a {
+	font-family: "Bebas";
+	font-size: 12px;
+	text-decoration: none;
+	color: #464646;
+	display: inline-block;
+	padding: 10px 0;
+}
+
+/*Footer section*/
+
+.footer {
+	display: block;
+	height: 75px;
+	background: url(../images/design/footer-bg.gif) repeat-x;
+	font-family: "Helvetica";
+	font-size: 12px;
+	color: #414141;
+	line-height: 1.5;
+	margin-top: 58px;
+}
+
+.footer span {
+	font-weight: bold;
+}
+
+.p-right {
+	float: right;
+}
+
+.footer p {
+	display: inline-block;
+	padding: 28px 0;
+
+}
