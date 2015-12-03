@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="b-container container ">
+		<biv class="b-container__header">
+			<header class="b-header">
+				<div class="b-header__logo">
+					<h1 class="b-logo">Weight Calculator<br><small>Calculate your life</small> </h1>
+				</div>
+			</header>
+		</biv>
+		<div class="b-container__main">
+			<div class="b-main ">
+				<div class="b-main__calc">
+					<div class="b-calc col-md-8 jumbotron">
+						<h4>Определение типа телосложения (индекс Соловьева)</h4>
+						<form action="" method="" class="b-calc_form" id="calc_form">
+							Ваш пол:
+							<input type="radio" name='sex' value="male" class="male" id="male">Мужской
+							<input type="radio" name='sex' value="female" id="female">Женский
+							<br>
+							Длина окружности запятья (см):
+							<input type="text" name="bangle" id="bangleLenght">
+							<br><input type="button" name="go" value="Считать" onclick="calcBodyType()">
+							
+
+						</form>
+						<div id="astenic" >  <h5>Ваш тип:  Астенический</h5>
+						Индекс Соловьева: менее 15 см у женщин и менее 18 у мужчин. У людей, имеющих астенический (тонкокостный) тип телосложения, продольные размеры преобладают над поперечными: конечности длинные, тонкая кость, шея длинная, тонкая, мышцы развиты сравнительно слабо. </div>
+						<div id="normstenic"><h5>Ваш тип: Нормостенический</h5> Индекс Соловьева: 15-17 см у женщин, 18-20 см у мужчин. Телосложение отличается пропорциональностью основных размеров и правильным их соотношением. </div>
+						<div id="gyperstenic"><h5>Ваш тип: Гиперстенический</h5>Индекс Соловьева: более 17 см у женщин и более 20 у мужчин. Телосложение отличается пропорциональностью основных размеров и правильным их соотношением. У представителей гиперстенического (ширококостного) телосложения поперечные размеры тела значительно больше, чем у нормостеников и особенно астеников. Их кости толсты и тяжелы, плечи, грудная клетка и бедра широкие, а ноги короткие. </div>
+					</div>
+				</div>
+				<div class="b-main__calc2">
+					<div class="b-calc2 col-md-8 jumbotron">
+						<h4>Расчет идеального веса по Броку</h4>
+						<form action="" method="" class="b-calc2_form" id="calc_form">
+							<span class="col-md-3">Ваш пол:</span>
+
+							<input type="radio" name='sex' value="male" class="male" id="male">Мужской
+							<input type="radio" name='sex' value="female" id="female">Женский
+							<br>
+							<span class="col-md-3">Тип телосложения:</span> 
+							<select name="bodyTypes" id="bodyType">
+								<option value="astenic">Астенический
+								<option value="normstenic">Нормостенический
+								<option value="gyperstenic">Гиперстенический
+							</select>
+							<br><span class="col-md-3">Ваш возраст (лет):</span>
+							<input type="text" id="age" >
+							<br><span class="col-md-3">Ваш рост (см):</span>
+							<input type="text" id="height">
+							<br><span class="col-md-3">Ваш вес (кг):</span>
+							<input type="text" id="weight">
+							<br><input type="button" name="ok" value="Считать" onclick="calcOptimalWeight()">
+							
+
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+	</div>
+
+	
+	<script src='js/jquery-2.1.4.min.js'></script>
+	<script src='js/bootstrap.min.js'></script>
+	<script src='js/main.js'></script>
+
+</body>
+</html>
+
+

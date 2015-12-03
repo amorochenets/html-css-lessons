@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="b-container container">
+		<biv class="b-container__header">
+			<header class="b-header">
+				<div class="b-header__logo">
+					<h1 class="b-logo">Weight Calculator<br><small>Calculate your life</small> </h1>
+				</div>
+			</header>
+		</biv>
+		<div class="b-container__main">
+			<div class="b-main jumbotron">
+				<div class="b-main__calc ">
+					<div class="b-calc col-md-5 ">
+						<form action="" method="" class="b-calc_form" id="calc_form">
+								Number 1
+							<br><input type="text" name="num1" class="b-calc__num1" id="num1">
+							<br>Operator
+							<br><select id="operators" class="operators">
+									<option class="operator" value="+">+
+									<option class="operator" value="-">-
+									<option class="operator" value="*">*
+									<option class="operator" value="/">/
+								</select>
+							<br>Number 2
+							<br><input type="text" name="num2" class="b-calc__num2" id="num2">
+							<br>Result
+							<br><input type="text" name="result" class="result" id="result">
+							<br><input type="button" value="OK" class="calc_btn" id="calc_btn">
+						</form>
+						<label for="password">Enter password</label>
+						<input type="password" id="password" required>
+						<meter max="4" id="password-strength-meter"></meter>
+						<p id="password-strength-text"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+	<script src='js/bootstrap.min.js'></script>
+	<script src='js/jquery-2.1.4.min.js'></script>
+</body>
+</html>
+
