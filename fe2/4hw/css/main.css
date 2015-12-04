@@ -11,11 +11,11 @@ body {
 
 .b-calc {
 	float: right;
-	box-shadow: 3px 3px 3px #888888;
+	box-shadow: 3px 3px 3px rgba(136,136,136,.5);
 }
 .b-calc2 {
 	float: right;
-	box-shadow: 3px 3px 3px #888888;
+	box-shadow: 3px 3px 3px rgba(136,136,136,.5);
 }
 
 #astenic {
