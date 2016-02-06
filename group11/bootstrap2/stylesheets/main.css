@@ -1,0 +1,207 @@
+@import "https://fonts.googleapis.com/css?family=Allura|Open+Sans:400,700,600&subset=latin,cyrillic,cyrillic-ext";
+body {
+    background: rgba(0, 0, 0, 0) url("../images/design/main-bg.jpg") no-repeat fixed 0 0 / cover ;
+    font-family: "Open Sans",Arial;
+}
+.b-container {
+    padding: 70px 0 0;
+}
+.b-container__stop{
+    margin: -70px 0 0;
+	position: absolute;
+}
+.b-container__header {
+    padding: 10px;
+}
+.b-header {
+}
+.b-header__logo {
+}
+.b-logo {
+}
+.b-logo__title {
+    color: rgb(142, 176, 55);
+    font-family: Allura,cursive;
+    font-size: 2.4em;
+    letter-spacing: 2px;
+    margin: -15px 0;
+}
+.b-logo__slogan {
+    font-size: 0.5em;
+    text-transform: uppercase;
+}
+.b-header__menu {
+}
+.b-menu {
+}
+.b-menu__item {
+}
+.b-menu__link {
+}
+.b-menu__item {
+}
+.b-menu__link {
+}
+.b-menu_level_1 {
+}
+.b-container__section {
+	position: relative;
+    clear: both;
+}
+.b-home {
+}
+.b-home__slider {
+}
+.b-slider {
+    display: flex;
+}
+.b-slider__heading {
+    margin: auto;
+    text-align: center;
+}
+.b-slide__image {
+    margin: 0 auto;
+}
+.b-heading {
+}
+.b-heading__text {
+    margin: -4px 0;
+}
+.b-heading__description {
+}
+.b-heading__phone {
+    font-size: 1.5em;
+    margin: 0.3em 0;
+}
+.b-heading__icon {
+    margin: -5px 0 0;
+    vertical-align: middle;
+}
+.b-list {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.b-slider__frame {
+}
+.b-slider__ {
+}
+.b-home__content {
+    margin: 15px 0 0;
+}
+.b-content {
+}
+.b-content__heading_style_italic {
+}
+.b-content__text {
+}
+.b-container__section {
+    margin: 12px 0 0;
+}
+.b-section {
+}
+.b-section__heading {
+}
+.b-section__info {
+}
+.b-articles {
+	/* выравнивание по перпендикул€рной оси */
+    align-items: stretch; /* элементы раст€гиваютс€, занима€ все пространство по перпендикул€рной оси */
+    display: flex;
+    flex-wrap: wrap; /* блоки перенос€тс€ */
+}
+.b-articles__article {
+}
+.b-article {
+    border: 0 none;
+    height: 100%;
+    padding: 10px;
+}
+.b-article__heading {
+    text-align: center;
+}
+.b-article__img {
+    width: 100%;
+}
+.b-article__text {
+}
+.b-section__minislider {
+}
+.b-minislider {
+}
+.b-container__section {
+}
+.b-section {
+}
+.b-section__heading {
+}
+.b-section__info {
+}
+.b-recipes {
+    display: flex;
+    flex-wrap: wrap;
+}
+.b-recipes__recipe {
+    margin-top: 1em;
+}
+.b-recipe {
+    height: 100%;
+}
+.b-recipe__img {
+    width: 100%;
+}
+.b-recipe__time {
+}
+.b-recipe__author {
+}
+.b-recipe__heading {
+    font-weight: bold;
+    text-align: center;
+}
+.b-recipe__text {
+}
+.b-container__section {
+}
+.b-section {
+}
+.b-section__heading {
+}
+.b-section__info {
+}
+.b-feedback {
+    display: flex;
+    flex-wrap: wrap;
+}
+.b-feedback__image {
+
+}
+:-moz-placeholder {
+    color: #666;
+    opacity: 1;
+}
+*::-moz-placeholder {
+    color: #666;
+    opacity: 1;
+}
+@media only screen and (max-width: 1200px) {
+}
+@media only screen and (max-width: 992px) {
+.b-feedback {
+    flex-direction: column;
+}
+.b-feedback__image {
+    height: 300px;
+    position: relative;
+}
+}
+@media only screen and (max-width: 768px) {
+.b-slider {
+    flex-direction: column; /* Ќаправление раскладки блоков */
+}
+.b-slider__heading {
+    padding: 1em 0;
+}
+}
+@media only screen and (max-width: 480px) {
+}
+@media only screen and (max-width: 320px) {
+}

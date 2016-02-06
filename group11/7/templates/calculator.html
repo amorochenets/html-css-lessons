@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Калькулятор</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href=".css">
+		
+	</head>
+	
+	<body>
+		<form action="" method="" class="calc_form" id="calc_form">
+				Число 1
+			<br><input type="text" name="num1" class="num1" id="num1">
+			<br>Операция
+			<br><select id="operators" class="operators">
+					<option class="operator" value="+">+
+					<option class="operator" value="-">-
+					<option class="operator" value="*">*
+					<option class="operator" value="/">/
+					<option class="operator" value="sqrt">&radic;
+				</select>
+			<br>Число 2
+			<br><input type="text" name="num2" class="num2" id="num2">
+			<br>Результат
+			<br><input type="text" name="result" class="result" id="result">
+			<br><input type="button" value="OK" class="calc_btn" id="calc_btn">
+		</form>
+	</body>
+	<script src="../scripts/jquery-2.1.4.js"></script>
+	<script src="../scripts/calculator.js"></script>
+
+	<script>
+		var c1 = new Calculator('#calc_form');
+	</script>
+</html>

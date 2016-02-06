@@ -1,0 +1,341 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bootstrap site</title>
+		<meta charset="utf-8">
+		<meta name="description" content="Bootstrap site about cooking">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="stylesheets/normalize.css">
+		<link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+		<link rel="stylesheet" href="stylesheets/main.css">
+		
+		<script src="scripts/jquery-2.1.4.min.js"></script>
+		<script src="scripts/bootstrap.min.js"></script>
+	</head>
+<body data-spy="scroll" data-target=".navbar">
+	<div class="b-container container">
+		<div class="b-container__header navbar navbar-inverse navbar-fixed-top">
+			<div class="b-header container">
+				<div class="b-header__logo">
+					<a href="#" class="b-logo navbar-brand">
+						<h1 class="b-logo__title">Cooking</h1>
+						<small class="b-logo__slogan">Удивите гостей</small>
+					</a>
+				</div>
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+					</button>
+				</div>
+				<div class="b-header__menu collapse navbar-collapse navbar-right" id="myNavbar">
+					<ul class="b-menu nav navbar-nav">
+					  <li class="b-menu__item"><a href="#section1" class="b-menu__link">Главная</a></li>
+					  <li class="b-menu__item"><a href="#section2" class="b-menu__link">О нас</a></li>
+					  <li class="b-menu__item dropdown"><a class="b-menu__link dropdown-toggle" data-toggle="dropdown" href="#">Рецепты<span class="caret"></span></a>
+						<ul class="b-menu b-menu_level_1 dropdown-menu">
+						  <li><a href="#section3" class="b-menu__link">Праздничное меню</a></li>
+						  <li><a href="#section3" class="b-menu__link">Фуршетное меню</a></li>
+						</ul>
+					  </li>
+					  <li class="b-menu__item"><a href="#section4" class="b-menu__link">Контакты</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="b-container__section">
+			<div class="b-container__stop" id="section1"></div>
+			<div class="b-home well">
+				<div class="b-home__slider">
+					<div class="b-slider row">
+						<div class="b-slider__heading col-md-6">
+							<div class="b-heading">
+								<h2 class="b-heading__text">Ресторан на дому</h2>
+								<small class="b-heading__description">Лучшие блюда мира на Вашем столе!</small>
+								<div class="b-heading__phone"><span class="b-heading__icon glyphicon glyphicon-earphone"></span> (044) 181-40-30</div>
+								<a href="#" class="btn btn-info btn-lg" role="button">Заказать</a>
+							</div>
+						</div>
+						<div class="b-slider__frame col-md-6">
+							<div id="myCarousel" class="carousel slide" data-ride="carousel">
+							  <!-- Indicators -->
+							  <ol class="carousel-indicators">
+								<li data-target="#myCarousel" data-slide-to="0" class=""></li>
+								<li class="" data-target="#myCarousel" data-slide-to="1"></li>
+								<li class="active" data-target="#myCarousel" data-slide-to="2"></li>
+							  </ol>
+
+							  <!-- Wrapper for slides -->
+							  <div class="carousel-inner b-slider__slides" role="listbox">
+								<div class="b-slide item">
+								  <img src="images/slider/1.jpg" alt="Chania" class="b-slide__image">
+								  <div class="carousel-caption">
+									<h3>Салат с черри</h3>
+									<p>Изумительный салат</p>
+								  </div>
+								</div>
+
+								<div class="b-slide item">
+								  <img src="images/slider/2.jpg" alt="Chania" class="b-slide__image">
+								  <div class="carousel-caption">
+									<h3>Пицца</h3>
+									<p>Ароматная пицца</p>
+								  </div>
+								</div>
+
+								<div class="b-slide item active">
+								  <img src="images/slider/3.jpg" alt="Flower" class="b-slide__image">
+								  <div class="carousel-caption">
+									<h3>Стейк</h3>
+									<p>Сочный стейк</p>
+								  </div>
+								</div>
+
+							  </div>
+
+							  <!-- Left and right controls -->
+							  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="b-home__content">
+					<div class="b-content">
+						<blockquote class="b-content__text">
+Желаете устроить Романтический ужин для своей второй половинки с изысканными блюдами
+и ресторанной подачей?  
+Отметить торжество в кругу семьи и отдыхать вместе со всеми, а не стоять у плиты весь день?
+Хотите чего-нибудь итальянского, тайского или японского?
+Или просто удивить гостей экзотическим меню?
+Тогда Вам к нам!
+
+						</blockquote>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="b-container__section">
+			<div class="b-container__stop" id="section2"></div>
+			<div class="b-section">
+				<div class="b-section__heading"></div>
+				<div class="b-section__info">
+					<div class="b-articles row">
+						<div class="b-articles__article col-sm-4">
+							<div class="b-article thumbnail">
+								<h2 class="b-article__heading">О нас</h2>
+								<img src="images/about/1.jpg" class="b-article__img img-thumbnail img-responsive">
+								<div class="b-article__text caption">За плечами поваров в нашей компании <mark>12&ndash;летний опыт работы</mark>. Вы сможете воспользоваться услугами профессионального   шеф-повара. Подойдет данная услуга и для тех, кто планирует выездное мероприятие, просто закажите повара на выезд.</div>
+							</div>
+						</div>
+						<div class="b-articles__article col-sm-4">
+							<div class="b-article thumbnail">
+								<h2 class="b-article__heading">Как это работает</h2>
+								<img src="images/about/2.jpg" class="b-article__img img-thumbnail img-responsive">
+								<div class="b-article__text">
+<ul class="b-list list-group caption">
+									<li class="list-group-item">Вы указываете время приезда повара на дом, свои пожелания к меню и кол-во человек.
+									</li><li class="list-group-item">Повар приезжает к Вам в оговоренное время и...
+									</li><li class="list-group-item">Вы наслаждаетесь шедеврами кулинарии в кругу близких людей!
+								</li></ul></div>
+							</div>
+						</div>
+						<div class="b-articles__article col-sm-4">
+							<div class="b-article thumbnail">
+								<h2 class="b-article__heading">Cезонная Акция</h2>
+								<img src="images/about/3.jpg" class="b-article__img img-thumbnail img-responsive">
+								<div class="b-article__text caption">Только сейчас, сделав заказ Повара  на дом, 
+Вы имеете возможность получить все удобства Ресторанного Сервиса прямо у себя ДОМА!
+А также, Подарок от нас:
+бутылку превосходного испанского Вина, несущего тепло и праздник в каждом глотке!
+</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="b-section__minislider">
+					<div class="b-minislider"></div>
+				</div>
+			</div>
+		</div>
+		<div class="b-container__section">
+			<div class="b-container__stop" id="section3"></div>
+			<div class="b-section">
+				<div class="b-section__heading"></div>
+				<div class="b-section__info">
+					<div class="b-recipes panel-group row">
+						<div class="b-recipes__recipe col-sm-4 col-lg-3">
+							<div class="b-recipe panel panel-default thumbnail">
+								<div class="b-recipe__heading panel-heading">Салат «Кукушкино гнездо»</div>
+								<div class="b-recipe__info panel-body">
+									<img class="b-recipe__img img-circle img-responsive" src="images/recipes/1.jpg">
+									<div class="b-recipe__time"></div>
+									<div class="b-recipe__author"></div>
+									<div class="b-recipe__text caption">Салат - это самое настоящее творческое блюдо. Именно поэтому при его приготовлении возможно проявить собственный художественный талант и недюжинное терпение.</div>
+								</div>	
+							</div>
+						</div>
+						<div class="b-recipes__recipe col-sm-4 col-lg-3">
+							<div class="b-recipe panel panel-default thumbnail">
+								<div class="b-recipe__heading panel-heading">Конфеты "Сладкий орешек"</div>
+								<div class="b-recipe__info panel-body">
+									<img class="b-recipe__img img-circle img-responsive" src="images/recipes/2.jpg">
+									<div class="b-recipe__time"></div>
+									<div class="b-recipe__author"></div>
+									<div class="b-recipe__text caption">Со всеми любителями домашних сладостей хочу поделиться удивительно несложным и интересным вариантом, как приготовить конфеты "Сладкий орешек".</div>
+								</div>	
+							</div>
+						</div>
+						<div class="b-recipes__recipe col-sm-4 col-lg-3">
+							<div class="b-recipe panel panel-default thumbnail">
+								<div class="b-recipe__heading panel-heading">Салат "Лесной"</div>
+								<div class="b-recipe__info panel-body">
+									<img class="b-recipe__img img-circle img-responsive" src="images/recipes/3.jpg">
+									<div class="b-recipe__time"></div>
+									<div class="b-recipe__author"></div>
+									<div class="b-recipe__text caption">Хочу предложить вкусный салатик вашему вниманию. Он сочный, ароматный, грибной. Подбор продуктов доступен каждому, а результат порадует и гостей, и родных. Попробуйте!</div>
+								</div>	
+							</div>
+						</div>
+						<div class="b-recipes__recipe col-sm-4 col-lg-3">
+							<div class="b-recipe panel panel-default thumbnail">
+								<div class="b-recipe__heading panel-heading">Оладьи</div>
+								<div class="b-recipe__info panel-body">
+									<img class="b-recipe__img img-circle img-responsive" src="images/recipes/4.jpg">
+									<div class="b-recipe__time"></div>
+									<div class="b-recipe__author"></div>
+									<div class="b-recipe__text caption">Что приготовить на скорую руку к чаю? Конечно же, оладьи. Этот рецепт классический, и по нему получаются отличные оладушки.</div>
+								</div>	
+							</div>
+						</div>
+						<div class="b-recipes__recipe col-sm-4 col-lg-3">
+							<div class="b-recipe panel panel-default thumbnail">
+								<div class="b-recipe__heading panel-heading">Салат "Монарх"</div>
+								<div class="b-recipe__info panel-body">
+									<img class="b-recipe__img img-circle img-responsive" src="images/recipes/5.jpg">
+									<div class="b-recipe__time"></div>
+									<div class="b-recipe__author"></div>
+									<div class="b-recipe__text caption">Для всех любителей сытных овощных блюд предлагаю очень интересный и простой рецепт приготовления салата "Монарх" с картофелем, помидорами и сыром. Лёгкий и сытный одновременно, он вам понравится!</div>
+								</div>	
+							</div>
+						</div>
+						<div class="b-recipes__recipe col-sm-4 col-lg-3">
+							<div class="b-recipe panel panel-default thumbnail">
+								<div class="b-recipe__heading panel-heading">Блинные мешочки</div>
+								<div class="b-recipe__info panel-body">
+									<img class="b-recipe__img img-circle img-responsive" src="images/recipes/6.jpg">
+									<div class="b-recipe__time"></div>
+									<div class="b-recipe__author"></div>
+									<div class="b-recipe__text caption">Необычное блюдо из любимых всеми блинов и оригинальной начинки поможет удивить гостей! Вкусно, просто и сытно.</div>
+								</div>	
+							</div>
+						</div>
+						<div class="b-recipes__recipe col-sm-4 col-lg-3">
+							<div class="b-recipe panel panel-default thumbnail">
+								<div class="b-recipe__heading panel-heading">Жареный рис со свининой и овощами</div>
+								<div class="b-recipe__info panel-body">
+									<img class="b-recipe__img img-circle img-responsive" src="images/recipes/7.jpg">
+									<div class="b-recipe__time"></div>
+									<div class="b-recipe__author"></div>
+									<div class="b-recipe__text caption">Мой друг был в Китае и привез от туда массу интересных кулинарных идей, например, вот такое несложное блюдо - жареный рис со свининой и овощами. Получается очень аппетитно, пикантно и вкусно!</div>
+								</div>	
+							</div>
+						</div>
+						<div class="b-recipes__recipe col-sm-4 col-lg-3">
+							<div class="b-recipe panel panel-default thumbnail">
+								<div class="b-recipe__heading panel-heading">Торт из заварного теста с медом</div>
+								<div class="b-recipe__info panel-body">
+									<img class="b-recipe__img img-circle img-responsive" src="images/recipes/8.jpg">
+									<div class="b-recipe__time"></div>
+									<div class="b-recipe__author"></div>
+									<div class="b-recipe__text caption">Заварное тесто для торта очень редко готовят в домашних условиях, хотя в этом нет ничего сложного. Рекомендую один раз попробовать и научиться, ведь это может пригодиться вам в будущем.</div>
+								</div>	
+							</div>
+						</div>
+						<ul class="col-sm-12 pager clearfix">
+						  <li><a href="#">Предыдущее</a></li>
+						  <li><a href="#">Следующее</a></li>
+						</ul>
+					</div> 
+				</div>
+			</div>
+		</div>
+		<div class="b-container__section">
+			<div class="b-container__stop" id="section4"></div>
+			<div class="b-section">
+				<div class="b-section__heading"></div>
+				<div class="b-section__info">
+					<div class="b-feedback jumbotron clearfix">
+						<form role="form" class="b-feedback__form form-horizontal col-md-6">
+							<div class="form-group">
+							  <label for="name" class="control-label col-sm-3">Ваше имя:</label>
+							  <div class="col-sm-9">          
+								<input type="text" placeholder="Введите имя" id="name" class="form-control">
+							  </div>
+							</div>
+							<div class="form-group">
+							  <label for="email" class="control-label col-sm-3">Email:</label>
+							  <div class="col-sm-9">
+								<input type="email" placeholder="Введите email" id="email" class="form-control">
+							  </div>
+							</div>
+							<div class="form-group">
+							  <label for="phone" class="control-label col-sm-3">Телефон:</label>
+							  <div class="col-sm-9">
+								<input type="phone" placeholder="Введите номер" id="phone" class="form-control">
+							  </div>
+							</div>
+							<div class="form-group">
+							  <label for="email" class="control-label col-sm-3">Сообщение:</label>
+							  <div class="col-sm-9">
+								<textarea placeholder="Введите сообщение" id="message" class="form-control"></textarea>
+								<span class="help-block">Ваше мнение очень важно для нас!</span>
+							  </div>
+							</div>
+							<div class="form-group">        
+							  <div class="col-sm-offset-2 col-sm-4">
+								<button class="btn btn-info" type="submit">Отправить</button>
+							  </div>
+							</div>
+						</form>
+						<div class="b-feedback__image col-md-6">
+							 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+								<div style="width: 100%; height: 100%;" id="block_map"></div>
+								<script>
+								var geocoder = new google.maps.Geocoder();
+								var latlng = new google.maps.LatLng(parseFloat("50.454079"), parseFloat("30.521590"));
+								//Инициализируем карту.
+								var mapOptions = {
+									zoom: 16, //Уровень зума
+									center: latlng, //Координаты центра карты
+									disableDefaultUI: true,
+									zoomControl: true,
+									mapTypeId: google.maps.MapTypeId.ROADMAP  //Тип карты
+								}
+								map = new google.maps.Map(document.getElementById("block_map"), mapOptions);
+								var marker = new google.maps.Marker({
+											map: map,
+										title: "frrffr",
+											position: new google.maps.LatLng(parseFloat("50.454079"), parseFloat("30.521590")),
+										});
+								</script>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<script>
+		window.onbeforeunload = function(){
+			return false;
+			}
+	</script>
+
+</body></html>

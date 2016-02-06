@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel='stylesheet' href='../stylesheets/bootstrap.min.css'>
+	<link rel='stylesheet' href='../stylesheets/gallery2.css'>
+	<title>Lesson 10. Gallery. HW</title>
+</head>
+<body>
+	<div class="b-container jumbotron">
+		<div class="b-contaier__gallery">
+			<div class="b-gallery" id='gallery1'>
+				<div class='b-picture col-md-2'><img src='../images/gallery/small_79.jpg' class='b-picture__image' alt='Image 79'></div>
+				<div class='b-picture col-md-2'><img src='../images/gallery/small_80.jpg' class='b-picture__image' alt='Image 80'></div>
+				<div class='b-picture col-md-2'><img src='../images/gallery/small_82.jpg' class='b-picture__image' alt='Image 82'></div>
+				<div class='b-picture col-md-2'><img src='../images/gallery/small_83.jpg' class='b-picture__image' alt='Image 83'></div>
+				<div class='b-picture col-md-2'><img src='../images/gallery/small_84.jpg' class='b-picture__image' alt='Image 84'></div>
+				<div class='b-picture col-md-2'><img src='../images/gallery/small_85.jpg' class='b-picture__image' alt='Image 85'></div>
+			<div class="b-crearfix"></div>
+			<div class="b-preview">
+				<div class='b-preview__content'>
+					<img src='../images/gallery/85.jpg' class='b-preview__image'>					
+					<div class='b-preview__text'></div>				
+					<div class='b-preview__text2 col-md-8'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt perspiciatis rerum doloremque sint, iste officia beatae voluptatum incidunt aperiam provident esse vel vitae non, expedita reiciendis. Maxime, fugiat, autem? Eius, provident, numquam? Odio ducimus rem vero voluptate tempora adipisci fuga iste officiis ullam et ut necessitatibus eaque a repellat hic perspiciatis, ad voluptates quia perferendis eum consequuntur facere nostrum sit expedita! </div>				
+				</div>
+			</div>
+			<audio class='b-audio'>
+		        <source src="../audio/Click_02.mp3"></source>
+		        <source src="../audio/Click_02.ogg"></source>
+			</audio>
+			</div>
+		</div>
+	</div>
+	
+	<script src="../scripts/jquery-2.1.4.js"></script>
+	<script src="../scripts/component.js"></script>
+	<script src="../scripts/settings.js"></script>
+	<script src="../scripts/init_settings.js"></script>
+	
+	<script src="../scripts/gallery2.js"></script>
+	<script>
+		var g1 = new Gallery('#gallery1');
+		</script>
+</body>
+</html>
