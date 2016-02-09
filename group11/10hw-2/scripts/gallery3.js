@@ -12,7 +12,7 @@ function Gallery(sSelector) {
 		g.ticker = window.setInterval(g.changeImg, g.tickerPeriod * 1000);
 	};
 	g.changeImg = function() {
-			g.pictCount = g.pictCount < 6 ? g.pictCount + 1 : g.pictCount = 1;
+			g.pictCount = g.pictCount < 5 ? g.pictCount + 1 : g.pictCount = 1;
 			g.picture.attr('src', '../images/gallery/' + g.pictCount + '.jpg')
 		}
 		//-----------
