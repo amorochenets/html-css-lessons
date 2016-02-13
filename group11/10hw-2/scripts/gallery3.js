@@ -12,6 +12,7 @@ function Gallery(sSelector) {
 	//-----------
 	g.display = function() {
 		g.ticker = window.setInterval(g.changeImg, g.tickerPeriod * 1000);
+
 	};
 
 	g.stopPlay = function() {
@@ -19,26 +20,27 @@ function Gallery(sSelector) {
 	};
 
 	g.setCurrent = function() {
-		g.pictCount = $(this).attr('alt');
-		g.currentPoint = $(this).attr('alt') - 1;
-		console.log(g.currentPoint);
-		console.log(g.pictCount);
+		g.pictCount = $(g.points).index(this);
+		g.currentPoint = $(g.points).index(this);
+
+				console.log('pic = ' + g.pictCount + '\n dot = ' + g.currentPoint);
+
 		g.showImg();
 	};
 	g.changeImg = function() {
-		g.pictCount = g.pictCount < 5 ? g.pictCount + 1 : g.pictCount = 1;
+		g.pictCount = g.pictCount < 5 ? +(g.pictCount) + 1 : g.pictCount = 1;
 		g.currentPoint = g.currentPoint < 4 ? g.currentPoint + 1 : g.currentPoint = 0;
-
+		// console.log('pic = ' + g.pictCount + '\n dot = ' + g.currentPoint);
 		g.showImg();
 	};
 	g.showImg = function() {
 		g.points.removeClass('b-point_active');
-		g.find('.b-point:eq(' + (g.currentPoint) + ')').addClass('b-point_active');
-		g.picture.attr('src', '../images/gallery/' + g.pictCount + '.jpg');
+		g.find('.b-point:eq(' + g.currentPoint + ')').addClass('b-point_active');
+		g.picture.attr('src', '../images/gallery/' + (+g.currentPoint+1) + '.jpg');
 	};
 
 	//-----------
-	// g.picture.ready(g.display);
+	g.picture.ready(g.display);
 	g.points.mouseover(g.stopPlay);
 	g.points.mouseout(g.display);
 	g.points.click(g.setCurrent);
