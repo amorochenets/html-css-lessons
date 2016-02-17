@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+		<link rel='stylesheet' href='../stylesheets/form1.css'>
+	</head>
+	<body>
+		<form action='?' method='GET' id='form2'>
+			<!-- <div class='b-form__message b-form__message_error'>
+			Форма заполнена неверно!
+			</div> -->
+			<table border='1'>
+				<tr>
+					<td><label class='b-form__label_name'>Пароль</label></td>
+					<td><input type='password' name='name' class='b-form__name b-textfield'></td>
+					<td><div class="b-form__passwd-str"></div></td>
+				</tr>
+				<tr>
+					<td><label class='b-form__label_brand'>Повторить пароль</label></td>
+					<td><input type='password' name='brand' class='b-form__brand b-textfield'></td>
+				</tr>
+				
+				<tr>
+					<td></td>
+					<td>
+						<input type='submit' value='OK' class='b-form__ok-button'>
+					</td>
+				</tr>
+			</table>
+		</form>	
+		<script src="../scripts/jquery-2.1.4.js"></script>
+		<script src="../scripts/component.js"></script>
+		<script src="../scripts/settings.js"></script>
+		<script src="../scripts/init_settings.js"></script>
+		<script src="../scripts/form_passwd.js"></script>
+		<script>
+		var f1 = new formChecker('#form2');
+		</script>
+	</body>
+</html>
