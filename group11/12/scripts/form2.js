@@ -5,7 +5,7 @@ function formChecker(sSelector) {
 
 	//Методы
 	f.check = function(event) {
-		event.preventDefault(); // выключаем событие по-умолчанию
+		// event.preventDefault(); // выключаем событие по-умолчанию
 		var form_error = false,
 			regexps = settings.get('regexps');
 		f.textFields.each(function() {

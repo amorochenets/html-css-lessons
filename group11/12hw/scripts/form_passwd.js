@@ -1,47 +1,67 @@
 function formChecker(sSelector) {
-	//-------------
-	var f = this;
+    //-------------
+    var f = this;
 
 
-	//Методы
-	f.check = function(event) {
-		// event.preventDefault(); // выключаем событие по-умолчанию
-		var passwd_state = 0,
-			currentPasswd = $('.b-form__passwd1').val(),
-			strongMark = settings.get('strongMark'),
-			err_pass = settings.get('err_pass');
-			pass_mess = '';
+    //Методы
+    f.check = function(event) {
+        // event.preventDefault(); // выключаем событие по-умолчанию
+        var currentPasswd = $('.b-form__passwd1').val(),
 
-		for (var i = 0; i < 4; i++) {
-			if (currentPasswd.match(strongMark[i])) {
-				console.log(err_pass[i])
-				// pass_mess = err_pass[i];
-			} 
-			};
-		
-				// pass_mess = 'Введите пароль..';
+            strongMark = settings.get('strongMark'),
+            err_pass = settings.get('err_pass'),
+            pass_mess = '';
 
-		
-		// console.log(pass_mess);
-		// f.errorMessage.stop()[slideToggle]();
-	}
+        for (var i = 0; i < 5; i++) {
+            var re = new RegExp(strongMark[i]);
+            if (currentPasswd.match(re)) {
+                pass_mess = err_pass[i];
+                break;
+            }
+        }
+        $('.b-form__passwd-str').html(pass_mess);
+        if (p2 == currentPasswd) {}
 
-	f.main = function() {
-			// alert(sSelector)
-			f.init(sSelector);
+        f.check = function(event) {
+            var p2 = $('.b-form__passwd2').val(),
+            mess2 = 'Пароль не совпадает!';
+            if (p2 == currentPasswd) {
+            	mess2 = 'Sovpalo';
+            }
+        $('.b-form__passwd-str2').html(mess2); 
+        }
 
-			//Свойства
-			f.textFields = f.find('.b-textfield');
-			
+        // console.log(currentPasswd.match("^[a-z]{5,20}$"));
+        // if (currentPasswd.match(re)) {
+        //     console.log(err_pass[i])
+        //     pass_mess = err_pass[i];
+
+        // };
+
+        // pass_mess = 'Введите пароль..';
 
 
-			//События
-			// f.elem.submit(f.check); // evem - взято з components - родительское свойство
-			f.elem.focus().keydown(f.check);
+        // console.log(pass_mess);
+        // f.errorMessage.stop()[slideToggle]();
+    }
 
-		}
-		//-------------
-	$(document).ready(f.main);
+    f.main = function() {
+            // alert(sSelector)
+            f.init(sSelector);
+
+            //Свойства
+            f.textFields = f.find('.b-textfield');
+
+
+
+            //События
+            // f.elem.submit(f.check); // evem - взято з components - родительское свойство
+            $('.b-form__passwd1').focus().keyup(f.check);
+            $('.b-form__passwd2').focus().keyup(f.check2);
+
+        }
+        //-------------
+    $(document).ready(f.main);
 
 }
 
