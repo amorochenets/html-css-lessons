@@ -35,7 +35,7 @@ function formChecker(sSelector) {
 
 			//События
 			f.elem.submit(f.check); // evel - взято з components - родительское свойство
-
+			
 		}
 		//-------------
 	$(document).ready(f.main);

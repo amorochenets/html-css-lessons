@@ -5,21 +5,24 @@ function formChecker(sSelector) {
 
 	//Методы
 	f.check = function(event) {
-		event.preventDefault(); // выключаем событие по-умолчанию
-		var form_error = false,
-			regexps = settings.get('regexps');
-		f.textFields.each(function() {
+		// event.preventDefault(); // выключаем событие по-умолчанию
+		var passwd_state = 0,
+			currentPasswd = $('.b-form__passwd1').val(),
+			strongMark = settings.get('strongMark'),
+			err_pass = settings.get('err_pass');
+			pass_mess = '';
 
-			var textField = $(this);
-			console.log(textField.attr('name'));
-			var re = new RegExp(regexps[textField.attr('name')]),
-				textfield_error = !textField.val().match(re);
-			textField.toggleClass('b-textfield_error', textfield_error);
-			if (textfield_error) {
-				form_error = true;
+		for (var i = 0; i < 4; i++) {
+			if (currentPasswd.match(strongMark[i])) {
+				console.log(err_pass[i])
+				// pass_mess = err_pass[i];
+			} 
 			};
-			slideToggle = form_error ? 'slideDown' : 'slideUp';
-		});
+		
+				// pass_mess = 'Введите пароль..';
+
+		
+		// console.log(pass_mess);
 		// f.errorMessage.stop()[slideToggle]();
 	}
 
@@ -29,11 +32,12 @@ function formChecker(sSelector) {
 
 			//Свойства
 			f.textFields = f.find('.b-textfield');
-			// f.errorMessage = f.find('.b-form__message_error');
+			
 
 
 			//События
-			f.elem.submit(f.check); // evel - взято з components - родительское свойство
+			// f.elem.submit(f.check); // evem - взято з components - родительское свойство
+			f.elem.focus().keydown(f.check);
 
 		}
 		//-------------
