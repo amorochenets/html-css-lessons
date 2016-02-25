@@ -20,29 +20,16 @@ function formChecker(sSelector) {
             }
         }
         $('.b-form__passwd-str').html(pass_mess);
-        if (p2 == currentPasswd) {}
+        f.currentPasswd = currentPasswd;
 
-        f.check = function(event) {
-            var p2 = $('.b-form__passwd2').val(),
-            mess2 = 'Пароль не совпадает!';
-            if (p2 == currentPasswd) {
-            	mess2 = 'Sovpalo';
-            }
-        $('.b-form__passwd-str2').html(mess2); 
+    }
+    f.check2 = function(event) {
+        var p2 = $('.b-form__passwd2').val(),
+            mess2 = "<span style='color:#FF000D'>Пароль не совпадает!</span>";
+        if (p2 == f.currentPasswd) {
+            mess2 = "<span style='color:#0007FF'>Пароль совпал!</span>";
         }
-
-        // console.log(currentPasswd.match("^[a-z]{5,20}$"));
-        // if (currentPasswd.match(re)) {
-        //     console.log(err_pass[i])
-        //     pass_mess = err_pass[i];
-
-        // };
-
-        // pass_mess = 'Введите пароль..';
-
-
-        // console.log(pass_mess);
-        // f.errorMessage.stop()[slideToggle]();
+        $('.b-form__passwd-str2').html(mess2);
     }
 
     f.main = function() {
@@ -51,13 +38,12 @@ function formChecker(sSelector) {
 
             //Свойства
             f.textFields = f.find('.b-textfield');
-
-
+            f.currentPasswd = '';
 
             //События
-            // f.elem.submit(f.check); // evem - взято з components - родительское свойство
-            $('.b-form__passwd1').focus().keyup(f.check);
-            $('.b-form__passwd2').focus().keyup(f.check2);
+
+            $('.b-form__passwd1').keyup(f.check);
+            $('.b-form__passwd2').keyup(f.check2);
 
         }
         //-------------
