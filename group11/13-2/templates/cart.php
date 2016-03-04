@@ -37,6 +37,7 @@ $title = "Корзина";
 					</td>
 				</tr>
 				</table>
+				<div class="b-goods_total-price"></div>
 				<a href='#' class='b-minicart__order'>Заказать</a>
 			</div>
 		</div>

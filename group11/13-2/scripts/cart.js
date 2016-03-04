@@ -19,9 +19,11 @@ function Cart(sSelector, sCartSelector) {
             addedGood = c.put(currentGood); //для розмещения товара в корзине
         c.list.show();
         c.goods[addedGood.getID()] = orderForm.find('.b-order-form__quantity').val();
-
-
-        $.cookie('cartGoods', c.goods, { 'expires': 7, 'path': '/' });
+        $.cookie('cartGoods', c.goods, {
+            'expires': 7,
+            'path': '/'
+        });
+        c.cart.find('.b-goods_total-price').html('Total: ' + c.totalPrice);
     };
 
     c.put = function(currentGood) { //розмещает в списке заказов
@@ -30,7 +32,9 @@ function Cart(sSelector, sCartSelector) {
             existingGood = c.list.find('.' + good_id_class);
         currentGood.addClass('b-good_in-cart');
         if (existingGood.length) {
+            c.totalPrice -= (existingGood.find('.b-order-form__quantity').val() * existingGood.find('.b-good__price').html());
             c.copyData(currentGood, existingGood, ['.b-order-form__quantity']);
+            c.totalPrice += (existingGood.find('.b-order-form__quantity').val() * existingGood.find('.b-good__price').html());
         } else {
             //находим первую строку в корзине, какая пустая и клонируем ее
             var newGood = c.list.find('.b-good:first-child').clone();
@@ -40,19 +44,21 @@ function Cart(sSelector, sCartSelector) {
             c.copyData(currentGood, newGood, ['.b-good__image', '.b-good__name', '.b-order-form__quantity', '.b-good__price']);
             c.list.find('.b-goods').append(newGood);
             c.bindMinicartEvents(newGood);
+            c.totalPrice += (newGood.find('.b-order-form__quantity').val() * newGood.find('.b-good__price').html());
+
         }
         return addedGood;
     };
-
     c.load = function() { //загрузка товаров из cookies
         c.goods = $.cookie('cartGoods');
         if (c.goods) {
+
             $.each(c.goods, function(goods_id, quantity) {
                 var currentGood = c.find('.b-good_id_' + goods_id);
                 currentGood.find('.b-order-form__quantity').val(quantity);
                 c.put(currentGood);
             });
-        }
+        } else c.goods = { /* id:quantity */ };
 
     };
     c.openCart = function(event) {
@@ -94,10 +100,17 @@ function Cart(sSelector, sCartSelector) {
         var currentGood = $(this).closest('.b-good'),
             goodDel = new Good(currentGood),
             goodId = goodDel.getID();
+        c.totalPrice -= (currentGood.find('.b-order-form__quantity').val() * currentGood.find('.b-good__price').html());
+        c.cart.find('.b-goods_total-price').html('Total: ' + c.totalPrice);
         c.list.find('.b-good_id_' + goodId).remove();
         c.find('.b-good_id_' + goodId).removeClass('b-good_in-cart');
         delete c.goods[goodId];
-        $.cookie('cartGoods', c.goods, { 'expires': 7, 'path': '/' });
+        $.cookie('cartGoods', c.goods, {
+            'expires': 7,
+            'path': '/'
+        });
+
+
     };
 
     c.main = function() {
@@ -109,6 +122,7 @@ function Cart(sSelector, sCartSelector) {
             c.order = c.cart.find('.b-minicart__order');
             c.quantity = c.cart.find('.b-minicart__quantity');
             c.total = c.cart.find('.b-minicart__total');
+            c.totalPrice = 0;
             c.goods = { /* id:quantity */ };
             $.cookie.json = true;
 
