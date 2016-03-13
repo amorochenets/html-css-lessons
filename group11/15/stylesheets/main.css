@@ -1,0 +1,557 @@
+
+@font-face {
+    font-family: "Lato Hairline";
+    src: url("../font/Lato-Hai.ttf");
+}
+
+html, body{
+	min-width: 100%;
+}
+
+body {
+    /*background: rgba(0, 0, 0, 0) url("../images/template.jpg") no-repeat scroll center top;*/
+    font-family: "Lato",sans-serif;
+    margin: 0;
+}
+img {
+}
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.b-container {
+}
+.b-container__header {
+}
+.b-header {
+    background: url("../images/header/main-bg.jpg") no-repeat center;
+    margin: 0 auto;
+}
+.b-container__fixBlockWidth {
+    margin: 0 auto;
+    width: 1181px;
+}
+.b-header__logo {
+    display: inline-block;
+    margin: 21px 0 0;
+}
+.b-logo {
+}
+.b-logo__link {
+}
+.b-logo__img {
+}
+.b-header__nav {
+    float: right;
+    margin: 44px 0 0;
+}
+.b-nav {
+}
+.b-nav__auth {
+    display: inline-block;
+    vertical-align: top;
+}
+.b-auth {
+    margin: 0;
+    padding: 0;
+}
+.b-auth__item {
+    display: inline-block;
+    margin: 0 0 0 23px;
+}
+.b-auth__link {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    word-spacing: -2px;
+}
+.b-nav__sandwich {
+    display: inline-block;
+    margin: 0 0 0 27px;
+    position: relative;
+}
+.b-sandwich {
+    display: block;
+    height: 10px;
+}
+/*.b-sandwich:hover .b-sandwich__menu {
+    display: block;
+}*/
+.b-sandwich__btn {
+    display: block;
+    height: 10px;
+}
+
+.b-sandwich__line{
+    display: block;
+    position: relative;
+    width: 15px;
+    height: 2px;
+    background: #fff;
+    transition: all linear 0.2s;
+    top: 4px;
+}
+.b-sandwich__line:before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 2px;
+    background: #fff;
+    top: -4px;
+    transition: all linear 0.2s;
+}
+.b-sandwich__line:after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 2px;
+    background: #fff;
+    top: 4px;
+    transition: all linear 0.2s;
+}
+.b-sandwich__line.b-sandwich__line_close {
+    height: 0;
+    transition: all linear 0.1s;
+}
+.b-sandwich__line.b-sandwich__line_close:before {
+    transition: all linear 0.2s;
+    transform: rotate(45deg);
+    top: 0;
+}
+.b-sandwich__line.b-sandwich__line_close:after {
+    transition: all linear 0.2s;
+    transform: rotate(-45deg);
+    top:0;
+}
+
+.b-sandwich__menu {
+    display: none;
+    position: absolute;
+    right: 0;
+}
+.b-menu {
+    margin: 20px 0 0 0;
+    padding: 0;
+    list-style-type: none;
+    background: rgba(180, 153, 125, 0.2);
+}
+.b-menu__item {
+    text-align: left;
+    line-height: 40px;
+    padding: 10px 20px;
+    white-space: nowrap;
+}
+.b-menu__item:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.b-menu__link {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    word-spacing: -2px;
+}
+.b-container__clearfix {
+}
+.b-header__findRecipes {
+}
+.b-findRecipes {
+    height: 537px;
+}
+.b-findRecipes__headingComment {
+    color: #fff;
+    font-family: "times new roman";
+    font-size: 36px;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 261px 0 0;
+    text-align: center;
+    word-spacing: -1px;
+}
+.b-findRecipes__heading {
+    color: #fff;
+    font-size: 100px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin: -7px 0 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+.b-findRecipes__ghostBtn {
+    border: 3px solid #fff;
+    color: #fff;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    height: 62px;
+    line-height: 62px;
+    margin: 19px auto 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 300ms ease-out 0s;
+    width: 274px;
+    word-spacing: 2px;
+}
+.b-findRecipes__ghostBtn:hover {
+    background: rgba(255, 255, 255, 0.3) none;
+}
+.b-findRecipes__comments {
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    margin: 37px 0 0;
+    text-align: center;
+    word-spacing: 1px;
+}
+.b-findRecipes__link {
+    color: #fff;
+    font-weight: bold;
+}
+.b-findRecipes__link:hover {
+    text-decoration: none;
+}
+.b-container__articles {
+    font-size: 0;
+}
+.b-articles {
+    padding: 102px 0 93px;
+}
+.b-articles__articlePreview {
+    display: inline-block;
+    margin: 0 0 0 50px;
+    text-align: center;
+    width: 360px;
+}
+.b-articles__articlePreview:first-child
+,.b-articles__articlePreview_margin-left_0
+	{
+    margin-left: 0;
+}
+.b-articlePreview {
+    color: #000;
+    font-size: 14px;
+    text-decoration: none;
+}
+.b-articlePreview__img {
+    background: url("../images/icons/icons-sprait-01.png") ;
+    border: 2px solid #221f1f;
+    border-radius: 100%;
+    height: 105px;
+    width: 105px;
+}
+.b-articlePreview__img_background_inspiredImg {
+    background-position: 22px 19px;
+}
+.b-articlePreview__img {
+    background: url("../images/icons/icons-sprite-01.png") ;
+    border: 2px solid #221f1f;
+    border-radius: 100%;
+    height: 103px;
+    margin: 0 auto;
+    width: 103px;
+}
+.b-articlePreview__img_background_inspiredImg {
+    background-position: 22px 22px;
+}
+.b-container__title {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin: 16px 0 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+.b-container__title_underline_center::after {
+    border-top: 1px solid #f57365;
+    content: "";
+    display: block;
+    margin: 6px auto 0;
+    width: 88px;
+}
+
+.b-articlePreview__content {
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    line-height: 26px;
+    margin: 12px 0 0;
+    word-spacing: 11px;
+}
+.b-articlePreview__img_background_rewardedImg {
+    background-position: -60px 24px;
+}
+.b-articlePreview__img_background_socialImg {
+    background-position: 104px 22px;
+}
+.b-container__intro {
+    background: #f7f7f7;
+}
+.b-intro {
+    padding-top: 102px;
+
+}
+.b-intro:before {
+    content: '';
+    display: inline-block;
+    float: left;
+    background: url("../images/content/iphone.png") no-repeat;
+    width: 546px;
+    height: 778px;
+
+}
+.b-container__title_underline_left {
+    display: inline-block;
+    float: right;
+    letter-spacing: 0.9px;
+    margin: 80px 266px 0 0;
+
+}
+.b-container__title_underline_left::after {
+    border-top: 1px solid #f57365;
+    content: "";
+    display: block;
+    margin: 6px 0 0;
+    width: 32%;
+}
+.b-intro__content {
+    clear: right;
+    float: right;
+    font-size: 15px;
+    letter-spacing: 0.9px;
+    line-height: 26px;
+    margin: -3px 0 0;
+    text-decoration: none;
+    width: 544px;
+    word-spacing: 0.3px;
+}
+.b-intro__image {
+    display: inline-block;
+    margin: -105px 0 0;
+}
+
+.b-container__p {
+    margin-bottom: 26px;
+}
+.b-content {
+    text-decoration: none;
+}
+
+.b-intro__btn {
+    background: url("../images/icons/uppstore-googleplay.png") ;
+    display: inline-block;
+    height: 39px;
+    width: 120px;
+}
+.b-intro__btn:first-child {
+    margin-left: 0;
+}
+.b-intro__btn_background_appStore {
+    background-position: 0 0;
+}
+.b-intro__btn_background_googlePlay {
+    background-position: 120px -39px;
+}
+.b-container__slider {
+    background: #4a3949;
+}
+.b-slider {
+    padding: 80px 0;
+    background: url("../images/content/fudi-app-bg.png") no-repeat center scroll;
+}
+.b-slider__slide {
+    text-align: center;
+}
+.b-slider__slide_current {
+}
+.b-slider__slide_first {
+
+}
+.b-slider__slide_off {
+    display: none;
+}
+.b-slider__slide_off {
+    display: none;
+}
+.b-slide {
+    display: inline-block;
+    color: #fff;
+    font-family: "Lato Hairline";
+    margin-bottom: 40px;
+
+}
+.b-slide__img {
+    border: 5px solid rgba(255, 255, 255, 0.4);
+    border-radius: 100%;
+}
+.b-slide__text {
+    font-family: "Lato Hairline";
+    font-size: 30px;
+    line-height: 44px;
+    margin: 12px auto 0;
+    width: 886px;
+    word-spacing: -1px;
+}
+.b-author {
+    font-size: 18px;
+    font-style: italic;
+    margin: 16px 0 0;
+}
+.b-slider__controls {
+
+}
+.b-controls {
+    display: table;
+    margin: auto;
+
+}
+.b-controls__btn {
+    display: inline-block;
+    margin-left: 10px;
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+    background: #796d79;
+    cursor: pointer;
+
+}
+.b-controls__btn:first-child {
+    margin-left: 0;
+}
+
+
+.b-controls__btn_current {
+    background: #ffffff;
+}
+.b-container__cuisinesCategories {
+}
+.b-cuisinesCategories {
+    font-size: 0;
+}
+.b-cuisinesCategories__title {
+    padding: 82px 0 40px;
+}
+.b-cuisinesCategories__cuisine {
+    display: inline-block;
+    width: 20%;
+
+}
+.b-cuisine {
+    color: #fff;
+    display: block;
+    height: 225px;
+    box-shadow: 0 0 68px rgba(0, 0, 0, 0.31) inset;
+    text-decoration: none;
+}
+
+.b-cuisine_background_italian {
+    background: url("../images/food/italian.jpg") ;
+	background-size: cover;
+}
+.b-cuisine__recipesQty {
+    padding: 76px 0 10px 0;
+    font-family: "Times New Roman";
+    font-size: 11.52pt;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+.b-cuisine__heading {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 27pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+.b-cuisine_background_indian {
+	background: url("../images/food/indian.jpg");
+	background-size: cover;
+}
+
+.b-cuisine_background_french {
+	background: url("../images/food/french.jpg");
+	background-size: cover;
+}
+.b-cuisine_background_steakhouse {
+	background: url("../images/food/steakhouse.jpg");
+	background-size: cover;
+}
+.b-cuisine_background_seafood {
+	background: url("../images/food/seafood.jpg");
+    background-size: cover;
+}
+.b-cuisine_background_sushi {
+	background: url("../images/food/sushi.jpg");
+	background-size: cover;
+}
+.b-cuisine_background_mexican {
+	background: url("../images/food/mexican.jpg");
+	background-size: cover;
+}
+.b-cuisine_background_chinese {
+	background: url("../images/food/chinese.jpg");
+	background-size: cover;
+}
+.b-cuisine_background_pizza {
+	background: url("../images/food/pizza.jpg");
+	background-size: cover;
+}
+.b-cuisine_background_american {
+	background: url("../images/food/american.jpg");
+	background-size: cover;
+}
+.b-container__statistics {
+}
+.b-statistics {
+    padding: 60px 0;
+}
+.b-statistics__statisticsType {
+    display: inline-block;
+    margin-left: 120px;
+}
+.b-statistics__statisticsType:first-child {
+    margin-left: 0;
+}
+.b-statisticsType {
+}
+.b-statisticsType__qty {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+.b-statisticsType__description {
+    text-align: center;
+    font-size: 16px;
+    font-weight: lighter;
+}
+.b-container__footer {
+}
+.b-footer {
+    padding: 40px 0 38px;
+    /* background: #f7f7f7; */
+	
+background: #2c83e0; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzJjODNlMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0MzQyN2EiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top, #2c83e0 0%, #43427a 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #2c83e0 0%,#43427a 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #2c83e0 0%,#43427a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c83e0', endColorstr='#43427a',GradientType=0 ); /* IE6-8 */
+	
+    border-top: 1px solid #e2e2e2;
+}
+.b-footer__copyright {
+    color: #8b8b8b;
+    font-size: 14px;
+}
