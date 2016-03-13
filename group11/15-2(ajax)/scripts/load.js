@@ -1,0 +1,1 @@
+$('.fileText').load('file.html .text');
